@@ -12,7 +12,7 @@ const PrimaryButton = ({text,onPress}:Props) => {
 
   return (
     
-    <Pressable className='bg-third p-2 rounded-3xl w-[50%]' onPress={onPress}>
+    <Pressable className='bg-third px-12 py-2 rounded-3xl ' onPress={onPress}>
       <Text className='text-center text-white text-2xl'>{text}</Text>
     </Pressable>
   )
