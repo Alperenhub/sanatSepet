@@ -1,21 +1,15 @@
-import { View, Text, TouchableWithoutFeedback, Keyboard, KeyboardAvoidingView, ScrollView, SafeAreaView, Pressable, TouchableOpacity, } from 'react-native'
+import { View, Text, TouchableWithoutFeedback, Keyboard, KeyboardAvoidingView, ScrollView, SafeAreaView, Pressable, TouchableOpacity, Alert, } from 'react-native'
 import React, { useState } from 'react'
 import PrimaryButton from '../components/PrimaryButton'
 import TextInputComp from '../components/TextInputComp'
 import { useNavigation } from '@react-navigation/native'
-import { HomeScreenNavigationProp, HomeStackNavigatorParamList } from '../../navigate-env'
-
-
-
+import { HomeScreenNavigationProp } from '../../navigate-env'
 
 
 const LogIn = () => {
 
   const navigation = useNavigation<HomeScreenNavigationProp>();
 
-  const sacit =()=>{
-    console.log('Yavuz çetin')
-  }
 
   const [number, setNumber] = useState<any>("");
 
@@ -55,11 +49,13 @@ const LogIn = () => {
         keyboardType="default"
         onSubmitEditing={function a(){ console.log("meymun")}}/>
       </TouchableWithoutFeedback>
+      <Pressable className='self-end' onPress={()=>Alert.alert('Ağla')}>
       <Text className='text-[#bbbbbb] underline mt-1 self-end text-xs'>Şifremi unuttum</Text>
+      </Pressable>
       </View>
 
       <View className='relative w-[90%] items-center mt-6'>
-      <PrimaryButton onPress={() => sacit()} text='Giriş Yap' />
+      <PrimaryButton onPress={() => navigation.navigate('CategoryPage')} text='Giriş Yap' />
       </View>    
 
       <View className='mt-2 flex-row'> 

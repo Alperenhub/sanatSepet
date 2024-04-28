@@ -2,6 +2,8 @@ import { View, Text, SafeAreaView, KeyboardAvoidingView, ScrollView, TouchableWi
 import React, { useState } from 'react'
 import TextInputComp from '../components/TextInputComp'
 import PrimaryButton from '../components/PrimaryButton'
+import { useNavigation } from '@react-navigation/native'
+import { HomeScreenNavigationProp } from '../../navigate-env'
 
 
 
@@ -10,6 +12,7 @@ import PrimaryButton from '../components/PrimaryButton'
 
 const SignUp = () => {
   
+  const navigation = useNavigation<HomeScreenNavigationProp>();
     
     const [userName, setUserName] = useState<String>('')
     const [email, setEmail] = useState<String>('');
@@ -75,7 +78,9 @@ const SignUp = () => {
 
       <View className='mt-2 flex-row'> 
         <Text className='text-[#bbbbbb] text-xs'>Zaten üye misin? </Text> 
+        <Pressable onPress={()=>navigation.navigate('LogIn')}>
          <Text className='text-[#2e62b6ef] text-xs underline'>Giriş Yap</Text>
+        </Pressable>
       </View>
 
 
