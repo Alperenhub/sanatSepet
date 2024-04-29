@@ -4,7 +4,8 @@ export type HomeStackNavigatorParamList={
     LogIn:undefined;
     SignUp:undefined;
     CategoryPage:undefined;
+    DrawerNavigation:undefined;
 };
 
 export type HomeScreenNavigationProp= NativeStackScreenProp<
-HomeStackNavigatorParamList, LogIn, SignUp, CategoryPage>
+HomeStackNavigatorParamList, LogIn, SignUp, CategoryPage, DrawerNavigation>

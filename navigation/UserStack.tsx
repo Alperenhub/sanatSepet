@@ -2,6 +2,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import React from 'react'
 import LogIn from '../src/screens/LogIn';
 import SignUp from '../src/screens/SignUp';
+import CategoryPage from '../src/screens/CategoryPage';
+import DrawerNavigation from './DrawerNavigation';
 
 
 const Stack = createNativeStackNavigator();
@@ -16,6 +18,7 @@ const UserStack = () => {
             <Stack.Screen name='LogIn' component={LogIn}/>
             <Stack.Screen name='SignUp' component={SignUp}/>
             <Stack.Screen name="CategoryPage" component={CategoryPage}/>
+            <Stack.Screen name="DrawerNavigation" component={DrawerNavigation}/>
 
         </Stack.Navigator>    
   )

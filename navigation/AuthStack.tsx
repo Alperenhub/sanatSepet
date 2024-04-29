@@ -4,6 +4,7 @@ import LogIn from '../src/screens/LogIn'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { HomeStackNavigatorParamList } from '../navigate-env';
 import CategoryPage from '../src/screens/CategoryPage';
+import DrawerNavigation from './DrawerNavigation';
 
 
 
@@ -21,6 +22,8 @@ const AuthStack = () => {
         <Stack.Screen name="LogIn" component={LogIn}/>
         <Stack.Screen name="SignUp" component={SignUp}/>
         <Stack.Screen name="CategoryPage" component={CategoryPage}/>
+        <Stack.Screen name="DrawerNavigation" component={DrawerNavigation}/>
+
         
     </Stack.Navigator>
    

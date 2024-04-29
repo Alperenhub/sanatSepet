@@ -1,24 +1,31 @@
 import React from 'react'
-import LogIn from './src/screens/LogIn'
-import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import { NavigationContainer } from '@react-navigation/native';
-import SignUp from './src/screens/SignUp';
 import RootNavigation from './navigation/RootNavigation';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import CategoryPage from './src/screens/CategoryPage';
+import { NavigationContainer } from '@react-navigation/native';
 
-//const Stack = createNativeStackNavigator();
+
+// const Drawer = createDrawerNavigator();
+
+// const DrawerNavigator = () =>{
+//   return(
+//     <Drawer.Navigator>
+//       <Drawer.Screen name="CategoryPage" component={CategoryPage} />
+//     </Drawer.Navigator>
+//   )
+// }
+
+
 
 const App = () => {
   return (
-  
-  //  <NavigationContainer>
-  //   <Stack.Navigator>
-  //     <Stack.Screen name='LogIn' component={LogIn}/>
-  //     <Stack.Screen name='SignUp' component={SignUp}/>
-  //   </Stack.Navigator>
-  //  </NavigationContainer> 
+  //  <>
   <RootNavigation/>
-  
-  
+   // /* <NavigationContainer>
+    // <DrawerNavigator/> 
+   // </NavigationContainer> */}
+
+  // </>
 
 )
 }
