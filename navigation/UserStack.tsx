@@ -18,7 +18,6 @@ const UserStack = () => {
             <Stack.Screen name='LogIn' component={LogIn}/>
             <Stack.Screen name='SignUp' component={SignUp}/>
             <Stack.Screen name="CategoryPage" component={CategoryPage}/>
-            <Stack.Screen name="DrawerNavigation" component={DrawerNavigation}/>
 
         </Stack.Navigator>    
   )

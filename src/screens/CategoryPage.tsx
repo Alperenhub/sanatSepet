@@ -1,19 +1,23 @@
-import { View, Text, Pressable } from 'react-native'
+import { View, Text } from 'react-native'
 import React from 'react'
-import ProductList from '../api/ProductList'
-import { useNavigation } from '@react-navigation/native'
-import { HomeScreenNavigationProp } from '../../navigate-env'
-
-
+import CategoryTexts from '../components/CategoryTexts'
 
 const CategoryPage = () => {
+  return (
+    <View className='items-center justify-center bg-bg h-screen w-full'>
+      <CategoryTexts 
+      text='Filmler'
+      screenName='Movies'
+      />
+      <CategoryTexts 
+      text='Kitaplar'
+      screenName='Books'
+      />
+      <CategoryTexts 
+      text='Tiyatrolar'
+      screenName='Theatres'
+      />
 
-  const navigation = useNavigation<HomeScreenNavigationProp>();
-  
-    return (
-    <View>
-      <Pressable onPress={()=>navigation.navigate('DrawerNavigation')}><Text className='text-lg'>Drawer'ı aç</Text></Pressable>
-    <ProductList/>
     </View>
   )
 }

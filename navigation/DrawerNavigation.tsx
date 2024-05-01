@@ -9,7 +9,8 @@ const Drawer = createDrawerNavigator();
 const DrawerNavigation = () => {
   return (
     <Drawer.Navigator screenOptions={{headerShown:false}}>
-        <Drawer.Screen name="Giriş Yap" component={LogIn}/>
+      
+        <Drawer.Screen name="Home" component={LogIn}/>
         <Drawer.Screen name="Filmler" component={CategoryPage}/>
 
     </Drawer.Navigator>
