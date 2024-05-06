@@ -8,6 +8,7 @@ import DrawerNavigation from './DrawerNavigation';
 import Movies from '../src/screens/Movies';
 import Books from '../src/screens/Books';
 import Theatres from '../src/screens/Theatres';
+import Filmlerim from '../src/screens/userFolder/Filmlerim';
 
 
 
@@ -26,7 +27,7 @@ const AuthStack = () => {
         <Stack.Screen name='Movies' component={Movies}/>
         <Stack.Screen name='Books' component={Books}/>
         <Stack.Screen name='Theatres' component={Theatres}/>
-
+        <Stack.Screen name='Filmlerim' component={Filmlerim}/>
 
         
     </Stack.Navigator>

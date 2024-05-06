@@ -4,7 +4,7 @@ import React from 'react'
 const Filmlerim = () => {
   return (
     <View>
-      <Text>Filmlerim</Text>
+      <Text className='text-black text-2xl'>Filmlerim</Text>
     </View>
   )
 }
