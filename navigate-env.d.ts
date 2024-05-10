@@ -12,5 +12,6 @@ export type HomeStackNavigatorParamList={
 
 };
 
+
 export type HomeScreenNavigationProp= NativeStackScreenProp<
 HomeStackNavigatorParamList, LogIn, SignUp, CategoryPage, DrawerNavigation, Movies, Theatres, Books,Filmlerim>

@@ -2,7 +2,6 @@ import { View, Text, TouchableOpacity, Image, ScrollView, Modal, Pressable } fro
 import React, { useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useNavigation } from '@react-navigation/native'
-import Filmlerim from '../screens/userFolder/Filmlerim'
 import { HomeScreenNavigationProp } from '../../navigate-env'
 
 type productProps={
@@ -18,7 +17,12 @@ const ProductItem = ({title,thumbnail}:productProps) => {
   const [isModal, setIsModal] = useState<boolean>(false)
 
  const handleVeri = () =>{
-    navigation.navigate("Filmlerim", {title,thumbnail})
+    navigation.navigate("Filmlerim", {title,thumbnail});
+    setIsModal(!isModal);
+ }
+ const go = ()=>{
+  navigation.navigate("Filmlerim");
+  setIsModal(!isModal)
  }
 
   return (
@@ -46,7 +50,7 @@ const ProductItem = ({title,thumbnail}:productProps) => {
         <Pressable onPress={handleVeri}>
         <Text>İzleyeceklerime ekle</Text>
         </Pressable>
-        <Pressable onPress={()=>navigation.navigate('Filmlerim')}>
+        <Pressable onPress={go}>
           <Text>Filmlerim'e git</Text>
         </Pressable>
       </View>
