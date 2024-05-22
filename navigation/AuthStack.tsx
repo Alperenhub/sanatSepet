@@ -9,6 +9,7 @@ import Movies from '../src/screens/Movies';
 import Books from '../src/screens/Books';
 import Theatres from '../src/screens/Theatres';
 import Filmlerim from '../src/screens/userFolder/Filmlerim';
+import FirstScreen from '../src/screens/FirstScreen';
 
 
 
@@ -21,6 +22,7 @@ const AuthStack = () => {
     screenOptions={{
       headerShown:false
     }}>
+        <Stack.Screen name='FirstScreen' component={FirstScreen}/>
         <Stack.Screen name="LogIn" component={LogIn}/>
         <Stack.Screen name="SignUp" component={SignUp}/>
         <Stack.Screen name="CategoryPage" component={CategoryPage}/>
@@ -28,6 +30,7 @@ const AuthStack = () => {
         <Stack.Screen name='Books' component={Books}/>
         <Stack.Screen name='Theatres' component={Theatres}/>
         <Stack.Screen name='Filmlerim' component={Filmlerim}/>
+
 
         
     </Stack.Navigator>

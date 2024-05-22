@@ -8,10 +8,11 @@ export type HomeStackNavigatorParamList={
     Movies:undefined;
     Theatres:undefined;
     Books:undefined;
-    Filmlerim:undefined
+    Filmlerim:undefined;
+    FirstScreen:undefined;
 
 };
 
 
 export type HomeScreenNavigationProp= NativeStackScreenProp<
-HomeStackNavigatorParamList, LogIn, SignUp, CategoryPage, DrawerNavigation, Movies, Theatres, Books,Filmlerim>
+HomeStackNavigatorParamList, LogIn, SignUp, CategoryPage, DrawerNavigation, Movies, Theatres, Books,Filmlerim,FirstScreen>
