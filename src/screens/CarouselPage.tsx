@@ -7,9 +7,9 @@ import { useNavigation } from '@react-navigation/native';
 import { HomeScreenNavigationProp } from '../../navigate-env';
 
 
-const image = {uri: 'https://s3-alpha-sig.figma.com/img/c924/d53a/9357ce251d2494e28b9a8a68615f030f?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UZSOodNeO8nu2f4YKhli~LLcHutojDeWfOIQaToOi8Pg7zk3~bWCkAIAxmpzxxYCRTztrza3Pyebcgi4HSRxqzdJhLC8A1zkrq6HUduqSZS9SlI7vxL2j7GvS~tDhJZ~68URc98YKwbEiqc0v~dCUOIriOgZ92NuLA0qtqTZUEHe1aBpcEmOz3PVyvAjVT8EtzrqpxaDQFxOHtyFJBZeqImkgOOJwYr~f0Hre3wTghlElJPVkx8RcmCSVagJ7dHa~WmMG971DHuKGH-TBhEy0hyU0oF8SvMJU~lHgQlMAGSpKINRyMCzzmIlkyUMenwgbFLjYTai7RvXSDTdtBCu0A__'};
+const image = {uri: 'https://s3-alpha-sig.figma.com/img/fcfb/a9a9/0a1e90d32d18effdeffba6919b7e82ca?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ppRer0eNqeDsxryKJYnerh~kjSYNMoAL5LLChmIvdQZWEwdQTq6byzKO8Ft930arRg7iU~~TRne-ptov3K6EVALNCSF5J1~eW5e92xlMDwquAnJI4F8xs~1JN3ADlWEU1hxD3J22aBgxecv32msM-uGD34kZZGzBd8iG35o58alc~yFBlRYlyDgBA1VyYASZZnjuLa4zb4VhKDH4cgRMFOme0VMpM4osjEhk2iDa5eQnw2KAYqL7i32iJOmKoT~oY5nsYoqDvMOtnV3VwCX4fl9fMauzm2JafBxz-KcJEk9egJ5YyadgcrjIYGmSL1cWDiNKwBKairCeRvUtDn3LsQ__'};
 
-const Books = () => {
+const CarouselPage = () => {
 
   const navigation = useNavigation<HomeScreenNavigationProp>();
 
@@ -25,13 +25,13 @@ const Books = () => {
       </View>
 
       <View>
-        <Text className='text-white text-center  w-[150px]'>
-        Find unique discount coupons for your favourite places.
+        <Text className='text-white text-center w-[90px]'>
+        Choose your membership.
         </Text>
       </View>
     
       <View className='flex  mt-24 w-[40%] relative '>
-        <Pressable onPress={()=>navigation.navigate('CarouselPage')} className='bg-white rounded-md my-2'><Text className='text-center text-[#00A79D]'>Skip</Text></Pressable>
+        <Pressable onPress={()=>navigation.navigate('Ucuncu')} className='bg-white rounded-md my-2'><Text className='text-center text-[#00A79D]'>Skip</Text></Pressable>
       </View>
 
       </View>
@@ -41,4 +41,4 @@ const Books = () => {
   )
 }
 
-export default Books
+export default CarouselPage

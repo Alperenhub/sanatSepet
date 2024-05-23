@@ -10,6 +10,12 @@ import Books from '../src/screens/Books';
 import Theatres from '../src/screens/Theatres';
 import Filmlerim from '../src/screens/userFolder/Filmlerim';
 import FirstScreen from '../src/screens/FirstScreen';
+import CarouselPage from '../src/screens/CarouselPage';
+import Ucuncu from '../src/screens/Ucuncu';
+import VideoScreen from '../src/screens/VideoScreen';
+import RegisterScreen from '../src/screens/RegisterScreen';
+import Registration from '../src/screens/Registration';
+import Main from '../src/screens/Main';
 
 
 
@@ -30,7 +36,14 @@ const AuthStack = () => {
         <Stack.Screen name='Books' component={Books}/>
         <Stack.Screen name='Theatres' component={Theatres}/>
         <Stack.Screen name='Filmlerim' component={Filmlerim}/>
+        <Stack.Screen name='CarouselPage' component={CarouselPage}/>
+        <Stack.Screen name='Ucuncu' component={Ucuncu}/>
+        <Stack.Screen name='VideoScreen' component={VideoScreen}/>
+        <Stack.Screen name='RegisterScreen' component={RegisterScreen}/>
+        <Stack.Screen name='Registration' component={Registration}/>
+        <Stack.Screen name='Main' component={Main}/>
 
+        
 
         
     </Stack.Navigator>

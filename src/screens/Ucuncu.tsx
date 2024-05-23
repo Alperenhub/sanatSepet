@@ -7,9 +7,9 @@ import { useNavigation } from '@react-navigation/native';
 import { HomeScreenNavigationProp } from '../../navigate-env';
 
 
-const image = {uri: 'https://s3-alpha-sig.figma.com/img/c924/d53a/9357ce251d2494e28b9a8a68615f030f?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UZSOodNeO8nu2f4YKhli~LLcHutojDeWfOIQaToOi8Pg7zk3~bWCkAIAxmpzxxYCRTztrza3Pyebcgi4HSRxqzdJhLC8A1zkrq6HUduqSZS9SlI7vxL2j7GvS~tDhJZ~68URc98YKwbEiqc0v~dCUOIriOgZ92NuLA0qtqTZUEHe1aBpcEmOz3PVyvAjVT8EtzrqpxaDQFxOHtyFJBZeqImkgOOJwYr~f0Hre3wTghlElJPVkx8RcmCSVagJ7dHa~WmMG971DHuKGH-TBhEy0hyU0oF8SvMJU~lHgQlMAGSpKINRyMCzzmIlkyUMenwgbFLjYTai7RvXSDTdtBCu0A__'};
+const image = {uri: 'https://s3-alpha-sig.figma.com/img/ea5a/5564/3e0f57084283c57ea0e5b53b775b62f2?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D8okVvQmEGkDCdbjE5QWa8dz2pr5XYvOt9E8bA-opCMrqqLDu96Irimb91~T7lCuYYn-32tgIuOGWHk4PhpM4nJzNuVMQ~0VgypHhjZLztAm8FDZ2OnDXlmNzxJyi7P6DY0Ws1FkpUwIhPAwR2STfod0JFb4OW~bD8SWLIb896uR~3o154SxUQo2psII-Hd3JPxq7SZwCZgw4xsp9XEu0en5tGOZrO5FxLumSsmaYWzOnS8QjZBAvNQaUoMbUuyt9XJdadkg7H6gi0HQoFbfCTYT0gcGPKysdV96Sq5lfUGLpw-29fVMs-1QhpWt7qYSBrQXXwZbx2zn0SZRTIRCbw__'};
 
-const Books = () => {
+const Ucuncu = () => {
 
   const navigation = useNavigation<HomeScreenNavigationProp>();
 
@@ -25,13 +25,13 @@ const Books = () => {
       </View>
 
       <View>
-        <Text className='text-white text-center  w-[150px]'>
-        Find unique discount coupons for your favourite places.
+        <Text className='text-white text-center w-[120px]'>
+        Explore Türkiye to its full potential!
         </Text>
       </View>
     
       <View className='flex  mt-24 w-[40%] relative '>
-        <Pressable onPress={()=>navigation.navigate('CarouselPage')} className='bg-white rounded-md my-2'><Text className='text-center text-[#00A79D]'>Skip</Text></Pressable>
+        <Pressable onPress={()=>navigation.navigate('VideoScreen')} className='bg-[#00A79D] rounded-md my-2'><Text className='text-center text-white'>Skip</Text></Pressable>
       </View>
 
       </View>
@@ -41,4 +41,4 @@ const Books = () => {
   )
 }
 
-export default Books
+export default Ucuncu
